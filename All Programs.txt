@@ -1,0 +1,521 @@
+1. Write a program to print "Hello Anand" in Java.
+
+
+ import java.lang.*;
+ class First 
+{ 
+  public static void main(String arg[])
+ {
+	System.out.print(Hello Anand");
+ } 
+}
+
+
+
+2. Write a program to print Command Line Arguments in Java.
+
+import java.lang.*;
+
+class Second
+{
+public static void main(String arg[])
+
+{
+
+System.out.println("We are learning Command Line Arguments");
+
+System.out.println(arg[0]);
+
+System.out.println(arg[1]); 
+System.out.println(arg[2]);
+
+}
+}
+--------------------------------
+3. Write a program to perform simple addition of two numbers in Java. import java.lang.*;
+
+class Third
+
+{
+Name public static void main(String arg[])
+
+ {
+  	int a=10;
+	 int b=20;
+	 int c=a+b; 
+	System.out.println("Addition is:" + c); 
+}
+
+
+4. Write a program to take user input using Scanner Class.
+
+import java.lang.*;
+
+import java.util.Scanner;
+
+class Fourth
+{
+public static void main(String arg[])
+
+{
+
+Scanner sc=new Scanner(System.in);
+
+System.out.println("Enter your Name, Age, 10th percentage"); 
+String name=sc.nextLine();
+
+int age=sc.nextInt();
+
+float per=sc.nextFloat();
+
+double salary=(age*100)/per;
+
+
+System.out.println("Your expected salary should be:" + salary);
+
+}
+}
+---------------------------------------
+ Write a program to show Array declaration, instantiation, and initialization. 
+
+import  java.lang.*;
+
+class Fifth
+
+{
+
+public static void main(String arg[])
+
+{
+
+int a[]; 	//declaration
+
+a = new int[3]; //instantiation
+
+a[0]=10; //initialization
+
+a[1]=11;
+
+a[2]=12;
+
+int b[] = {21, 23, 22}; //declaration and initialization
+
+System.out.println(a[0]+" "+a[1]+" "+a[2]);
+ System.out.println(b[0]+" "+b[1]+" "+b[2]);
+
+}
+
+}
+____________________________________________
+ Write a program to show difference between for-loop and foreach-loop.
+
+import java.lang.*;
+
+import java.util.Scanner;
+
+class Sixth
+{
+
+	public static void main(String arg[]) 
+	{
+	Scanner sc = new Scanner(System.in);
+	 int sum=0, total=0, per=0; 
+	int a[] = new int[5]; //Array creation
+	 System.out.println("Please enter marks of 5 subjects");
+	 
+	for(int i=0; i<5; i++)
+ {
+a[i] = sc.nextInt();
+ }
+ 
+	 System.out.print("The sum of your marks is: ");
+
+ for(int j:a) 
+{
+  
+ sum = sum+j;
+}
+	 System.out.println(sum);
+	 System.out.println("Please enter the Max total marks: "); 
+	total = sc.nextInt();
+	 System.out.print("Your calculated percentage is:");
+	 per (sum*100)/total;
+	 System.out.print(per);
+
+}
+
+}
+-------------------------------------------------
+ Write a program to show 2D array operation.
+
+import java.lang.*;
+
+class Seventh
+
+{
+
+public static void main(String arg[])
+
+{
+
+	int a[][] = {{1,2,3}, {4,5,6}}; //2D Array declaraion and initialization 	System.out.println("The 2D array elements are:");
+
+	for(int i=0; i<2; i++)
+
+{
+
+	for(int j=0; j<3; j++)
+
+{
+
+	System.out.print(a[i][j]+" ");
+
+}
+
+	System.out.println();
+
+}
+
+}
+
+}
+-----------------------------------------------------
+
+8. Write a program to show if-else in Java.
+
+import java.lang.*;
+
+import java.util.Scanner;
+
+ class Eighth
+{
+public static void main(String arg[])
+
+{
+
+Scanner sc = new Scanner(System.in);
+ System.out.println("Please enter your marks:");
+
+int marks = sc.nextInt();
+
+
+if(marks<50)
+
+{
+
+System.out.println("fail");
+
+}
+
+else if(marks>=50 && marks<60)
+
+{
+
+System.out.println("D grade");
+
+}
+
+else if(marks>=60 && marks<70)
+{
+System.out.println("C grade");
+
+}
+else if(marks>=70 && marks<80)
+{
+System.out.println("B grade");
+}
+
+else if(marks>=80 && marks<90)
+
+{
+System.out.println("A grade");
+}
+
+else if(marks>=90 && marks<100)
+{
+System.out.println("A+ grade");
+}
+
+
+else
+{
+System.out.println("Invalid!");
+
+}
+}
+}
+----------------------------------------
+Write a program to show switch-case in Java.
+
+import java.lang.*;
+
+import java.util.Scanner; 
+
+class Ninth
+{
+public static void main(String arg[])
+
+{
+
+Scanner sc = new Scanner(System.in);
+ System.out.println("Please enter your age:"); 
+int age=sc.nextInt();
+
+switch(age)
+
+{
+
+case 10: System.out.println("School Time.....");
+ break;
+
+case 18: System.out.println("College Time....");
+ break;
+
+case 25: System.out.println("Job Time....");
+break;
+
+
+default: System.out.println("Enjoy the Time.....");
+
+}
+
+}
+}
+------------------------------------------------
+Write a program to show while and do-while loop in Java.
+
+import java.lang.*;
+import java.util.Scanner;
+
+class Tenth
+{
+public static void main(String arg[])
+
+{
+
+Scanner sc = new Scanner(System.in);
+ System.out.println("While loop");
+
+System.out.println("Enter a possitive integer");
+ int a=sc.nextInt();
+
+
+while(a!=0)
+{
+System.out.println("Work hard");
+
+a--;
+
+}
+
+
+System.out.println("Do while loop");
+
+do
+
+{
+
+System.out.println("Be happy");
+
+a++;
+
+}
+while(a!=10);
+
+}
+}
+-----------------------------------
+import java.lang.*;
+
+class Fourteen 
+{
+	 int var; 
+	 public static void main(String args[]) 
+	 { 
+		 Fourteen a1 = new Fourteen();
+		 a1.var = 10;
+		 Fourteen a2 = new Fourteen();
+		 a2.var = 20; System.out.println(a1.var+" "+a2.var); 
+	}
+}
+
+--------------------------------------------------
+
+import java.lang.*; 
+
+class Student 
+
+{ 
+Student(String name)
+{
+ System.out.println("Student name is: "+name); 
+}
+
+int Roll No;
+
+	public static void main(String args[])
+
+	{
+
+	Student a1 = new Student("Manan"); 
+	Student a2 = new Student("Lokesh");
+	 Student a3 = new Student("Gaurav");
+	 Student a4 = new Student("Sameer");
+	 Student a5 = new Student("Namah");
+	 a1.Roll No =101; 
+	a2.RollNo= 102; 
+	a3.RollNo= 103;
+	 a4.RollNo= 104;
+	 a5. Roll No= 105; 
+
+	System.out.println(a1.RollNo+" "+a2.RollNo+" "+a3.RollNo+" "+a4.RollNo+ 	" 	"+a5.RollNo);
+
+}
+
+}
+
+------------------------------------------------------
+
+16. Write a program to show member functions calling through objects.
+
+//With writing constructor code
+
+import java.lang.*;
+ import java.util.Scanner;
+
+ class Sixteen
+{
+	 int marks1, marks2, marks3; 
+	Sixteen(String batch) 
+	{  
+		 System.out.println(batch); 
+	}	
+	
+	int add(int a, int b, int c)
+	{	
+		int d=a+b+c; 
+		return d;
+	}
+
+	public static void main(String args[])
+
+	{
+
+		Scanner sc = new Scanner(System.in);
+		 Sixteen a1 = new Sixteen("4th Sem CS A1+A2");
+		 System.out.println("Please enter the marks");
+		 a1.marks1 = sc.nextInt();
+		 a1.marks2 = sc.nextInt();
+		 a1.marks3 = sc.nextInt();
+
+		int sum=a1.add(a1.marks1, a1.marks2, a1.marks3);
+
+		System.out.println("The addition of input marks is:" +sum);
+
+}
+
+}
+
+-------------------------------------------
+import java.lang.*; 
+import java.util.Scanner; 
+
+class Student
+ { 
+	 int RollNo, Age;
+ }
+
+class BTechStudent extends Student
+
+{
+
+String Name;
+
+public static void main(String args[])
+
+{
+
+Scanner sc = new Scanner(System.in);
+ BTechStudent st = new BTechStudent();
+ System.out.println("Please Enter Name, RollNo, and Age");
+ st.Name = sc.nextLine(); 
+st.Roll No = sc.nextInt();
+ st.Age = sc.nextInt();
+ System.out.println(st.Name +""+ st.RollNo +""+ st.Age);
+
+}
+
+}
+--------------------------------------
+
+ Write a program to show the calling of member function in inheritance.
+
+import java.lang.*;
+
+import java.util.Scanner;
+
+class Student
+
+{
+
+int add(int x,int y)
+{
+return x+y;
+}
+
+
+class BTechStudent extends Student
+{
+	int a, b, sum;
+
+public static void main(String args[])
+
+{
+
+	Scanner sc = new Scanner(System.in);
+	BTechStudent st = new BTechStudent();
+	 System.out.println("Please enter two numbers: ");
+
+	st.a = sc.nextInt();
+
+	st.b = sc.nextInt();
+
+	int sum = st.add(st.a, st.b);
+
+	System.out.println("Addition of two numbers is:. "+sum);
+
+}
+
+} 
+------------------------------
+
+19. Write a program to show the calling of same name variable in inheritance.
+
+import java.lang.*;
+
+class Arithmetic
+
+{
+int a=12;
+}
+
+class Calculate extends Arithmetic
+
+{ 
+	 int a=23; public static void main(String args[])
+	 { 
+	 Calculate cl= new Calculate(); 
+	System.out.println("Values is: "+ cl.a);
+
+	 Arithmetic ar = new Arithmetic();
+	 System.out.println("Values is: "+ ar.a); 
+	Arithmetic arc = new Calculate();
+	 System.out.println("Values is: "+ arc.a);
+
+}
+}
+
+
+
+
+
